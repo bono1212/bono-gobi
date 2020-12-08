@@ -1,89 +1,262 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.1.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.1.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="hyery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOBI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="/img/fabicon.png">
+    <link rel="icon" type="image/png" href="/img/fabicon.png" sizes="192x192">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body>
+    <div id="header">
+        <div class="nav_bg"></div>
+        <div class="container clearfix">
+            <h1>
+                <a href="#">
+                    <img src="img/logo62.png" alt="동대문엽기떡볶이">
+                </a>
+            </h1>
+            <div class="h_right">
+                <div class="h_top clearfix">
+                    <div class="btn_all">
+                        <a href="#"><img src="img/float_youtube4.png" alt="유튜브"></a>
+                        <a href="#"><img src="img/float_instargram4.png" alt="인스타"></a>
+                        <a href="#"><img src="img/float_blog4.png" alt="블로그"></a>
+                        <a href="#"><img src="img/float_facebook4.png" alt="페북"></a>
+                    </div>
+                    <!--//.btn_all-->
+                    <div class="log">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                    <!--//.log-->
+                </div>
+                <!--//.h_top-->
+                <div class="nav">
+
+                    <ul class="gnb clearfix">
+                        <li><a href="#">HOT</a>
+                            <ul class="sub">
+                                <li><a href="#">INTRO</a></li>
+                                <li><a href="#">BI&amp;CI</a></li>
+                                <li><a href="#">BREND</a></li>
+                                <li><a href="#">LOCATION</a></li>
+                            </ul>
+                            <!--//.sub-->
+                        </li>
+                        <li><a href="#">MENU</a>
+                            <ul class="sub">
+                                <li><a href="#">CASHMERE MENU</a></li>
+                            </ul>
+                            <!--//.sub-->
+                        </li>
+                        <li><a href="#">JOIN</a>
+                            <ul class="sub">
+                                <li><a href="#">INTERIO</a></li>
+                                <li><a href="#">MARKET</a></li>
+                                <li><a href="#">MERKET</a></li>
+                                <li><a href="#">MERKET</a></li>
+                            </ul>
+                            <!--//.sub-->
+                        </li>
+                        <li><a href="#">EVENT</a>
+                            <ul class="sub">
+                                <li><a href="#">EVENT</a></li>
+                            </ul>
+                            <!--//.sub-->
+                        </li>
+                        <li><a href="#">STORE</a>
+                            <ul class="sub">
+                                <li><a href="#">GOBI STORE</a></li>
+                            </ul>
+                            <!--//.sub-->
+                        </li>
+                        <li><a href="#">INFORMATION</a>
+                            <ul class="sub">
+                                <li><a href="#">INFO</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">MEMBER</a></li>
+                                <li><a href="#">MEDIA</a></li>
+                            </ul>
+                            <!--//.sub-->
+                        </li>
+                    </ul>
+                    <!--//.gnb-->
+                </div>
+                <!--//.nav-->
+            </div>
+            <!--//.h_right-->
+        </div>
+        <!--//.container-->
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!--//#header-->
+    <div id="main_visual">
+        <a href="#">
+        </a>
+    </div>
+    <!--//#main_visual-->
+    <div id="notice_event">
+        <div class="container">
+            <div class="notice">
+                <h3>NOTICE</h3>
+                <ul>
+                    <li><a href="#">[19.03.12] Lorem ipsum presents the sample font</a></li>
+                    <li><a href="#">[20.07.24] Lorem ipsum presents the sample font</a></li>
+                    <li><a href="#">[20.07.14] Lorem ipsum presents the sample font</a></li>
+                    <li><a href="#">[20.05.15] Lorem ipsum presents the sample font</a></li>
+                </ul>
+                <a href="#" class="more">MORE <span>&gt;</span></a>
+            </div>
+            <!--//.notice-->
+            <div class="event">
+                <h3>EVENT</h3>
+                <ul>
+                    <li><a href="#">[20.01.01 ~ 20.12.20] Lorem ipsum presents the sample font</a></li>
+                    <li><a href="#">[20.07.20 ~ 20.08.19] Lorem ipsum presents the sample font</a></li>
+                    <li><a href="#">[20.07.01 ~ 20.12.31] Lorem ipsum presents the sample font</a></li>
+                    <li><a href="#">[20.07.01 ~ 20.12.31] Lorem ipsum presents the sample font</a></li>
+                </ul>
+                <a href="#" class="more">MORE <span>&gt;</span></a>
+            </div>
+            <!--//.event-->
+        </div>
+        <!--//.container-->
+    </div>
+    <!--//#notice_event-->
+    <div id="sub_banner">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    </div>
+    <!--//#sub_banner-->
+    <div id="yupdduk_menu">
+        <div class="container2">
+            <h2>SCARF MENU</h2>
+            <p>좋은 디자인 추천합니다.</p>
+            <ul>
+                <li>
+                    <strong>CASHMERE</strong>
+                    <span>추천합니다</span>
+                    <a href="#" class="more">MORE</a>
+                    <img src="img/menu01.png" alt="엽떡">
+                </li>
+                <li>
+                    <strong>CASHMERE</strong>
+                    <span>추천합니다</span>
+                    <a href="#" class="more">MORE</a>
+                    <img src="img/menu01.png" alt="주먹밥">
+                </li>
+                <li>
+                    <strong>CASHMERE</strong>
+                    <span>추천합니다</span>
+                    <a href="#" class="more">MORE</a>
+                    <img src="img/menu01.png" alt="튀김">
+                </li>
+                <li>
+                    <strong>CASHMERE</strong>
+                    <span>추천합니다</span>
+                    <a href="#" class="more">MORE</a>
+                    <img src="img/menu01.png" alt="세트">
+                </li>
+            </ul>
+        </div>
+        <!--//.container2-->
+    </div>
+    <!--//#yupdduk_menu-->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
-</html>
+    <div id="our_info">
+        <div class="container2 clearfix">
+            <div class="txt">
+                <h3>OUR INFORMATION</h3>
+                <p>Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation.</p>
+            </div>
+            <ul class="bn clearfix">
+                <li>
+                    <img src="img/bg_locationBefore2.jpg" alt="bnbn">
+                    <h3>LOCATIONS</h3>
+                    <p>Lorem ipsum, in graphical and textual context,<br>
+                        refers to filler text that is placed in a document or visual presentation.</p>
+                    <span><a href="#">READ MORE</a></span>
+                </li>
+                <li>
+                    <img src="img/bg_franchiseBefore2.jpg" alt="bnbnbn">
+                    <h3>FRANCHISE</h3>
+                    <p>Lorem ipsum, in graphical and textual context,<br>
+                        refers to filler text that is placed in a document or visual presentation.</p>
+                    <span><a href="#">READ MORE</a></span>
+                </li>
+                <li>
+                    <img src="img/bg_faqBefore2.jpg" alt="bnbn">
+                    <h3>FAQ</h3>
+                    <p>Lorem ipsum, in graphical and textual context,<br>
+                        refers to filler text that is placed in a document or visual presentation.</p>
+                    <span><a href="#">READ MORE</a></span>
+                </li>
+            </ul>
+        </div>
+        <!--//.container2-->
+    </div>
+    <!--//#our_info-->
+
+
+    <div id="ad">
+        <div class="container">
+            <img src="img/bt_banner02(2).png" alt="1">
+            <img src="img/bt_banner04(2)0809.png" alt="2">
+            <img src="img/bt_banner03(2).png" alt="3">
+            <img src="img/bt_banner05(2).png" alt="4">
+            <img src="img/bt_banner06(2)0809.png" alt="5">
+            <img src="img/bt_banner07(2)0809.png" alt="6">
+        </div>
+        <!--//.container-->
+    </div>
+    <!--//#ad-->
+    <div id="footer">
+        <div class="container clearfix">
+            <img src="img/logo62.png" alt="">
+           <div class="f_top">
+              <ul class="clearfix">
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">고객의 소리</a></li>
+              </ul>
+           </div>
+           <div class="f_medium">
+               <ul>
+                  <li>회사명:(주)핫시즈너</li>
+                  <li>사업자등록번호 : 201-86-13311</li>
+                  <li>가맹문의 : 070-7710-8592</li>
+                  <li>고객센터 : 1661-8514</li>
+              </ul>
+              <ul class="last">
+                   <li>본사 : 서울특별시 성동구 성수이로18길 7, HS빌딩 7층</li>
+              </ul>
+              
+           </div>
+           <div class="f_bottom">
+               <p>COPYRIGHT &copy; GOBI CASHMERE ALL RIGHTS RESERVED</p>
+           </div>
+        </div>
+        <!--//.container-->
+    </div>
+    <!--//#footer-->
+
+</body></html>
+
+
+
+
+
+
+
